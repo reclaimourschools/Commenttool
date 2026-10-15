@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scholarship Tax Credit Comment Kickstart</title>
+<meta name="description" content="Write a public comment opposing the proposed Federal Scholarship Tax Credit regulations (REG-117199-25).">
+<style>
+  /* ============ THEME: change these to match your website ============ */
+  :root {
+    --bg: #f7f6f2;
+    --card: #ffffff;
+    --text: #1f2328;
+    --muted: #5d636b;
+    --border: #d9d6cc;
+    --accent: #1d4e89;        /* buttons, links, highlights */
+    --accent-text: #ffffff;   /* text on accent-colored buttons */
+    --accent-soft: #e6eef8;
+    --warn: #9a5b00;
+    --warn-soft: #fff4e0;
+    --radius: 10px;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --max-width: 1180px;
+  }
+  /* =================================================================== */
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 16px; line-height: 1.55; }
+  .wrap { max-width: var(--max-width); margin: 0 auto; padding: 24px 16px 40px; }
+  header h1 { font-size: 1.6rem; margin: 0 0 6px; line-height: 1.25; }
+  header p { margin: 0 0 6px; color: var(--muted); }
+  .facts { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .9rem; margin: 12px 0 0; padding: 0; list-style: none; }
+  .facts b { font-weight: 600; }
+  .deadline { color: var(--warn); font-weight: 600; }
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 20px; margin-top: 20px; align-items: start; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+  .card + .card { margin-top: 16px; }
+  .card h2 { margin: 0 0 4px; font-size: 1.15rem; }
+  .lead { color: var(--muted); margin: 0 0 12px; font-size: .93rem; }
+  label { display: block; font-weight: 600; margin: 12px 0 5px; font-size: .92rem; }
+  .hint { font-weight: 400; color: var(--muted); font-size: .84rem; }
+  input[type=text], select, textarea { width: 100%; font: inherit; color: var(--text); background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 9px 11px; }
+  textarea { resize: vertical; min-height: 90px; }
+  input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible, .topic-head:focus-within { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 12px; }
+  @media (max-width: 600px) { .grid3 { grid-template-columns: 1fr; } }
+  .seg { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); border-radius: 99px; padding: 5px 12px; font-weight: 400; font-size: .88rem; margin: 0; cursor: pointer; background: #fff; }
+  .pill:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+  .pill input { margin: 0; }
+  .group-title { font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 18px 0 6px; font-weight: 700; }
+  .topic { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px; background: #fff; }
+  .topic.on { border-color: var(--accent); }
+  .topic-head { display: flex; gap: 10px; align-items: flex-start; padding: 9px 12px; margin: 0; cursor: pointer; font-weight: 400; }
+  .topic-head input { margin-top: 5px; flex: none; }
+  .topic-head .t { font-weight: 600; }
+  .topic-head .c { display: block; font-size: .8rem; color: var(--accent); }
+  .star { color: var(--warn); }
+  .topic-body { padding: 0 12px 12px 34px; display: none; }
+  .topic.on .topic-body { display: block; }
+  .topic-body p { margin: 0 0 6px; font-size: .9rem; }
+  .asks { background: var(--warn-soft); color: var(--warn); border-radius: 6px; padding: 6px 10px; font-size: .86rem; margin: 6px 0; }
+  .questions { margin: 4px 0 0; padding-left: 18px; color: var(--muted); font-size: .87rem; }
+  .preview { position: sticky; top: 12px; }
+  @media (max-width: 900px) { .preview { position: static; } }
+  #output { min-height: 420px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .82rem; line-height: 1.5; }
+  .counter { font-size: .85rem; margin-top: 6px; color: var(--muted); }
+  .counter.over { color: var(--warn); font-weight: 600; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  button, .btn { font: inherit; font-weight: 600; font-size: .93rem; border-radius: 8px; padding: 9px 16px; cursor: pointer; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-text); text-decoration: none; display: inline-block; }
+  .secondary { background: #fff !important; color: var(--accent) !important; }
+  .linkbtn { background: none; border: 0; padding: 0; color: var(--muted); font-weight: 400; font-size: .84rem; text-decoration: underline; }
+  .note { font-size: .86rem; color: var(--muted); margin-top: 12px; }
+  .note.warn { color: var(--warn); }
+  .edited { font-size: .84rem; color: var(--warn); margin-top: 6px; display: none; }
+  .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--text); color: #fff; padding: 8px 16px; border-radius: 99px; font-size: .9rem; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+  footer { margin-top: 18px; font-size: .8rem; color: var(--muted); text-align: center; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="tool-title"></h1>
+    <p id="tool-subtitle"></p>
+    <ul class="facts" id="facts"></ul>
+  </header>
+
+  <div class="layout">
+    <div>
+      <section class="card" aria-labelledby="h-about">
+        <h2 id="h-about">1. About you</h2>
+        <p class="lead">Comments are posted publicly. Only include what you're comfortable sharing.</p>
+        <label>Commenting as</label>
+        <div class="seg" id="as"></div>
+        <div class="grid3">
+          <div id="name-wrap"><label for="name">Name</label><input type="text" id="name" autocomplete="name"></div>
+          <div><label for="city">City <span class="hint">(optional)</span></label><input type="text" id="city" autocomplete="address-level2"></div>
+          <div><label for="state">State <span class="hint">(optional)</span></label><select id="state"></select></div>
+        </div>
+        <div id="org-wrap"><label for="org">Organization name</label><input type="text" id="org" autocomplete="organization"></div>
+        <label>I am… <span class="hint">(choose any)</span></label>
+        <div class="seg" id="roles"></div>
+        <label for="about">Your story <span class="hint">(optional, but personal details make comments more persuasive)</span></label>
+        <textarea id="about" rows="3" placeholder="e.g., I teach 5th grade at a public school in our district, and my two children attend public schools."></textarea>
+        <label class="pill" id="disc-wrap" style="margin-top:10px"><input type="checkbox" id="disc"> Add "These views are my own and do not represent my employer."</label>
+      </section>
+
+      <section class="card" aria-labelledby="h-topics">
+        <h2 id="h-topics">2. What concerns you?</h2>
+        <p class="lead">Check the issues that matter to you, then explain why in your own words. One or two points backed by your own experience are stronger than many brief ones.</p>
+        <div id="topics"></div>
+      </section>
+    </div>
+
+    <aside class="card preview" aria-labelledby="h-preview">
+      <h2 id="h-preview">3. Your comment</h2>
+      <p class="lead">Builds as you type. You can make final edits here.</p>
+      <textarea id="output" aria-label="Your comment"></textarea>
+      <div class="counter" id="counter"></div>
+      <div class="edited" id="edited">You've edited this box directly. Changes above will overwrite it. <button class="linkbtn" id="resync" type="button">Rebuild from form</button></div>
+      <div class="actions">
+        <button type="button" id="copy">Copy text</button>
+        <button type="button" id="download" class="secondary">Download .txt</button>
+        <a class="btn secondary" id="submit" target="_blank" rel="noopener">Submit your comment ↗</a>
+      </div>
+      <p class="note" id="howto"></p>
+      <p class="note" id="links"></p>
+      <p class="note"><button class="linkbtn" id="reset" type="button">Clear everything and start over</button></p>
+    </aside>
+  </div>
+
+  <footer><span id="footer"></span><br>We thank <a href="https://ombcomment.netlify.app/" target="_blank" rel="noopener">https://ombcomment.netlify.app/</a> for inspiring this tool.</footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* =====================================================================
+   CONFIG — edit this block to customize the tool.
+   ===================================================================== */
+const CONFIG = {
+  title: "Oppose the Federal Scholarship Tax Credit Rule",
+  subtitle: "Treasury and the IRS have proposed rules for a new federal tax credit for donations to private K-12 scholarship organizations. Tell them what's wrong with it. This page builds a properly cited public comment you can paste into the official comment form.",
+  footer: "Nothing you type leaves your browser. Your draft is saved on this device only. This tool is not affiliated with the Treasury Department or IRS.",
+
+  rule: {
+    name: "Federal Scholarship Tax Credit",
+    agency: "Treasury / IRS",
+    docketNumber: "REG-117199-25",
+    docketId: "IRS-2026-1354",
+    rin: "1545-BR97",
+    frCitation: "91 FR 62818",
+    deadline: "2026-12-01",          // YYYY-MM-DD
+    deadlineText: "December 1, 2026",
+    submitUrl: "https://www.federalregister.gov/documents/2026/10/02/2026-20277/federal-scholarship-tax-credit#open-comment",
+    ruleUrl: "https://www.federalregister.gov/d/2026-20277",
+    charLimit: 5000                  // comment-box limit; longer comments can be attached as a file
+  },
+
+  // Opening position statement (appears after the intro paragraph).
+  position: "I oppose the proposed regulations and urge Treasury and the IRS to withdraw or substantially revise them, for the reasons described below.",
+
+  // Default sentence that starts each topic. {ref} is replaced with the topic's reference.
+  // A topic can override this with its own `opener`.
+  opener: "I object to {ref}.",
+
+  roles: [
+    { id: "parent", label: "A parent or guardian", phrase: "a parent or guardian of a K-12 student" },
+    { id: "educator", label: "A teacher or school staff", phrase: "an educator" },
+    { id: "admin", label: "A school leader or board member", phrase: "a school leader" },
+    { id: "student", label: "A student or former student", phrase: "a student or former student" },
+    { id: "taxpayer", label: "A taxpayer", phrase: "a taxpayer" },
+    { id: "advocate", label: "A community member", phrase: "a community member who cares about public education" }
+  ],
+
+  // The parts of the rule people can object to.
+  //   cite: the label shown and used in the heading
+  //   ref: used inside the opening sentence
+  //   asks (optional): agencies specifically requested comment here (shows a ★)
+  //   opener (optional): replaces the default opening sentence
+  topics: [
+    { id: "statelimits", group: "",
+      cite: "§ 1.25F-5(e)(2)", ref: "proposed § 1.25F-5(e)(2), which bars participating States from setting their own requirements for scholarship granting organizations",
+      title: "States can't add their own safeguards",
+      summary: "States that opt in could not set SGO requirements stricter than the statute, or use their own certification standards to exclude any SGO that meets the bare minimum. That means no state rules on fraud, academic quality, civil rights, fiscal track record, or which schools and expenses scholarships can cover.",
+      questions: ["What safeguards does your state have for public funds or existing programs that couldn't apply here?", "How would this affect your state's ability to protect students and taxpayers?"] },
+    { id: "civilrights", group: "",
+      cite: "§ 1.25F-3; § 1.25F-5(e)(2)", ref: "the SGO requirements in proposed § 1.25F-3",
+      opener: "The SGO requirements in proposed § 1.25F-3 include no protections against discrimination for students who use these scholarships, and proposed § 1.25F-5(e)(2) would prevent States from adding them.",
+      title: "No civil rights or disability protections",
+      summary: "Nothing in the rule requires SGOs or the private schools they fund to follow federal civil rights laws. Students with disabilities who use a scholarship at a private school lose their rights under IDEA, including a free appropriate public education. States couldn't add these protections themselves.",
+      questions: ["Have you seen students turned away or disciplined by private schools based on disability, religion, sex, or sexual orientation?", "What would losing IDEA rights mean for a student with a disability you know?"] },
+    { id: "income", group: "",
+      cite: "§ 1.25F-3(c)(6)", ref: "the household income rules in proposed § 1.25F-3(c)(6)",
+      title: "Not targeted to low-income families",
+      summary: "Families earning up to 300% of area median income qualify, which can mean $500,000 for a family of four in some places. The rule also ignores non-cash income like home equity. Treasury estimates about 96% of children in participating states would be eligible.",
+      questions: ["Who will actually benefit: families already paying private school tuition, or students who need help?", "Should the program be limited to low-income families?"] },
+    { id: "economic", group: "",
+      cite: "Regulatory Impact Analysis", ref: "the Regulatory Impact Analysis accompanying the proposed rule",
+      opener: "The Regulatory Impact Analysis accompanying the proposed rule ignores the program's costs to public schools and taxpayers.",
+      title: "Cost to taxpayers and public schools",
+      summary: "Treasury estimates nearly $26 billion a year in credit-eligible contributions by 2030, more than the federal government spends on Title I or IDEA. The analysis doesn't weigh what this means for public schools, which serve most students.",
+      questions: ["What could that money do for public schools in your community?", "What effects on public schools, state budgets, or students does the analysis leave out?"] },
+    { id: "reporting", group: "",
+      cite: "§ 1.25F-4", ref: "the reporting and recordkeeping requirements in proposed § 1.25F-4",
+      opener: "The reporting requirements in proposed § 1.25F-4 are too weak to provide meaningful accountability.",
+      title: "No real accountability or public reporting",
+      summary: "SGOs report only minimal data to the IRS, and states can't require more. There would be no public information on which students get scholarships, which schools they attend, or how funds are used. Treasury says it 'assumes' SGOs will publicize their own results.",
+      questions: ["What information should the public be able to see about how this money is spent?", "Should schools receiving these funds have to report on student outcomes?"] },
+    { id: "located", group: "",
+      cite: "§ 1.25F-1(a)(10)", ref: "the definition of \"located in a State\" in proposed § 1.25F-1(a)(10)",
+      title: "Out-of-state organizations can operate in your state",
+      summary: "An SGO would count as \"located\" in a state just by being registered to do business there. No office or staff in the state is needed, so large national organizations could operate in many states at once.",
+      questions: ["Should organizations handing out scholarships in your state have to be based there and answer to state officials?"] },
+    { id: "general", group: "",
+      cite: "Entire proposed rule", ref: "the proposed regulations as a whole",
+      opener: "I oppose the proposed regulations as a whole.",
+      title: "Anything else",
+      summary: "Any other reason you oppose the program or these rules.",
+      questions: ["What is the most important thing you want Treasury and the IRS to know?"] }
+  ],
+
+  closing: "Thank you for the opportunity to comment on these proposed regulations.",
+
+  extraLinks: [
+    { label: "Read the proposed rule", url: "https://www.federalregister.gov/d/2026-20277" },
+    { label: "Find your Representative", url: "https://www.house.gov/representatives/find-your-representative" },
+    { label: "Find your Senators", url: "https://www.senate.gov/senators/senators-contact.htm" }
+  ],
+
+  storageKey: "scholarship-credit-comment-v3"
+};
+
+/* =====================================================================
+   APP — you usually won't need to edit below this line.
+   ===================================================================== */
+const US_STATES = ["","Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming","Puerto Rico","Guam","U.S. Virgin Islands","American Samoa","Northern Mariana Islands"];
+
+const blank = () => ({ as: "individual", name: "", org: "", city: "", state: "", roles: [], about: "", disclaimer: false, selected: [], answers: {} });
+let S = load() || blank();
+let manualEdit = false;
+
+function load() { try { const r = localStorage.getItem(CONFIG.storageKey); return r ? Object.assign(blank(), JSON.parse(r)) : null; } catch (e) { return null; } }
+function save() { try { localStorage.setItem(CONFIG.storageKey, JSON.stringify(S)); } catch (e) {} }
+
+const $ = s => document.querySelector(s);
+const topicById = id => CONFIG.topics.find(t => t.id === id);
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === "class") n.className = v;
+    else if (k === "text") n.textContent = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+    else n.setAttribute(k, v === true ? "" : v);
+  }
+  for (const k of kids.flat()) if (k != null) n.append(k.nodeType ? k : document.createTextNode(k));
+  return n;
+}
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 1800); }
+
+/* ---------- Build the form ---------- */
+function buildHeader() {
+  const R = CONFIG.rule;
+  document.title = CONFIG.title;
+  $("#tool-title").textContent = CONFIG.title;
+  $("#tool-subtitle").textContent = CONFIG.subtitle;
+  $("#footer").textContent = CONFIG.footer;
+  const dl = Math.ceil((new Date(R.deadline + "T23:59:59") - new Date()) / 86400000);
+  $("#facts").append(
+    el("li", {}, el("b", { text: "Docket: " }), `${R.docketNumber} (${R.docketId})`),
+    el("li", {}, el("b", { text: "Agency: " }), R.agency),
+    el("li", { class: "deadline" }, `Due ${R.deadlineText}` + (dl > 0 ? ` · ${dl} day${dl === 1 ? "" : "s"} left` : " · comment period closed")),
+    el("li", {}, el("a", { href: R.ruleUrl, target: "_blank", rel: "noopener", text: "Read the rule ↗" }))
+  );
+  $("#submit").href = R.submitUrl;
+  $("#howto").textContent = `To submit: click "Submit your comment" to open the official comment form, paste your comment into the Comment box (or attach the .txt file), fill in your details, and submit by ${R.deadlineText}. Submitted comments are public and can't be edited or withdrawn.`;
+  if (CONFIG.extraLinks.length) {
+    $("#links").append("Then send a copy to your members of Congress: ",
+      ...CONFIG.extraLinks.flatMap((l, i) => [i ? " · " : "", el("a", { href: l.url, target: "_blank", rel: "noopener", text: l.label })]));
+  }
+}
+
+function buildAbout() {
+  [["individual", "Myself"], ["organization", "An organization"], ["anonymous", "Anonymous"]].forEach(([v, t]) => {
+    const inp = el("input", { type: "radio", name: "as", value: v, checked: S.as === v || null });
+    inp.addEventListener("change", () => { S.as = v; syncVisibility(); update(); });
+    $("#as").append(el("label", { class: "pill" }, inp, t));
+  });
+  CONFIG.roles.forEach(r => {
+    const inp = el("input", { type: "checkbox", checked: S.roles.includes(r.id) || null });
+    inp.addEventListener("change", () => { S.roles = CONFIG.roles.filter(x => x.id === r.id ? inp.checked : S.roles.includes(x.id)).map(x => x.id); update(); });
+    $("#roles").append(el("label", { class: "pill" }, inp, r.label));
+  });
+  US_STATES.forEach(s => $("#state").append(el("option", { value: s, text: s || "Select…", selected: S.state === s || null })));
+  [["name", "name"], ["city", "city"], ["org", "org"], ["about", "about"]].forEach(([id, key]) => {
+    const f = $("#" + id); f.value = S[key]; f.addEventListener("input", () => { S[key] = f.value; update(); });
+  });
+  $("#state").addEventListener("change", e => { S.state = e.target.value; update(); });
+  $("#disc").checked = S.disclaimer;
+  $("#disc").addEventListener("change", e => { S.disclaimer = e.target.checked; update(); });
+  syncVisibility();
+}
+function syncVisibility() {
+  $("#name-wrap").style.display = S.as === "anonymous" ? "none" : "";
+  $("#org-wrap").style.display = S.as === "organization" ? "" : "none";
+  $("#disc-wrap").style.display = S.as === "individual" ? "" : "none";
+  postHeight();
+}
+
+function buildTopics() {
+  let group = "";
+  CONFIG.topics.forEach(t => {
+    if (t.group && t.group !== group) { group = t.group; $("#topics").append(el("div", { class: "group-title", text: group })); }
+    const a = S.answers[t.id] || (S.answers[t.id] = { text: "", change: "" });
+    const box = el("div", { class: "topic" + (S.selected.includes(t.id) ? " on" : "") });
+    const cb = el("input", { type: "checkbox", checked: S.selected.includes(t.id) || null, "aria-controls": "body-" + t.id });
+    cb.addEventListener("change", () => {
+      S.selected = CONFIG.topics.filter(x => x.id === t.id ? cb.checked : S.selected.includes(x.id)).map(x => x.id);
+      box.classList.toggle("on", cb.checked);
+      if (cb.checked) setTimeout(() => box.querySelector("textarea").focus(), 0);
+      update();
+    });
+    const why = el("textarea", { rows: 4, id: "why-" + t.id });
+    why.value = a.text;
+    why.addEventListener("input", () => { a.text = why.value; update(); });
+    const alt = el("textarea", { rows: 2, id: "alt-" + t.id, style: "min-height:60px" });
+    alt.value = a.change;
+    alt.addEventListener("input", () => { a.change = alt.value; update(); });
+
+    box.append(
+      el("label", { class: "topic-head" }, cb,
+        el("span", {}, el("span", { class: "t" }, t.asks ? el("span", { class: "star", "aria-label": "Agencies requested comment" }, "★ ") : null, t.title),
+          el("span", { class: "c", text: t.cite }))),
+      el("div", { class: "topic-body", id: "body-" + t.id },
+        el("p", { text: t.summary }),
+        t.asks ? el("div", { class: "asks", text: t.asks }) : null,
+        t.questions && t.questions.length ? el("ul", { class: "questions" }, ...t.questions.map(q => el("li", { text: q }))) : null,
+        el("label", { for: "why-" + t.id }, "Why do you object? ", el("span", { class: "hint", text: "Use specifics: your experience, examples, who would be harmed." })),
+        why,
+        el("label", { for: "alt-" + t.id }, "What should they do instead? ", el("span", { class: "hint", text: "(optional)" })),
+        alt)
+    );
+    $("#topics").append(box);
+  });
+}
+
+/* ---------- Assemble the comment ---------- */
+function joinList(arr) { return arr.length <= 1 ? arr.join("") : arr.length === 2 ? arr.join(" and ") : arr.slice(0, -1).join(", ") + ", and " + arr[arr.length - 1]; }
+function ensurePeriod(s) { s = s.trim(); return s && !/[.!?"')\]]$/.test(s) ? s + "." : s; }
+
+function buildComment() {
+  const R = CONFIG.rule, L = [];
+  L.push(`Re: ${R.name}, ${R.docketNumber} (Docket ID ${R.docketId}; RIN ${R.rin}; ${R.frCitation})`, "",
+    "To the Department of the Treasury and the Internal Revenue Service:", "");
+
+  const phrases = CONFIG.roles.filter(r => S.roles.includes(r.id)).map(r => r.phrase);
+  const place = [S.city.trim(), S.state].filter(Boolean).join(", ");
+  let intro;
+  if (S.as === "organization" && S.org.trim()) {
+    intro = `I am submitting this comment on behalf of ${S.org.trim()}${place ? ", based in " + place : ""}.`;
+    if (phrases.length) intro += ` I am ${joinList(phrases)}.`;
+  } else if (phrases.length) intro = `I am writing as ${joinList(phrases)}${place ? " in " + place : ""}.`;
+  else intro = place ? `I am writing from ${place}.` : "I am writing to comment on the proposed regulations.";
+  if (S.about.trim()) intro += " " + ensurePeriod(S.about);
+  if (S.as === "individual" && S.disclaimer) intro += " These views are my own and do not represent my employer.";
+  L.push(intro, "", CONFIG.position);
+
+  S.selected.forEach((id, i) => {
+    const t = topicById(id), a = S.answers[id] || {};
+    let body = (t.opener || CONFIG.opener).replace("{ref}", t.ref);
+    if ((a.text || "").trim()) body += " " + ensurePeriod(a.text);
+    L.push("", `${i + 1}. ${t.title} (${t.cite})`, body);
+    if ((a.change || "").trim()) L.push("Recommendation: " + ensurePeriod(a.change));
+  });
+
+  L.push("", CONFIG.closing, "");
+  if (S.as === "anonymous") L.push("Respectfully submitted.");
+  else {
+    L.push("Sincerely,");
+    if (S.name.trim()) L.push(S.name.trim());
+    if (S.as === "organization" && S.org.trim()) L.push(S.org.trim());
+    if (place) L.push(place);
+  }
+  return L.join("\n");
+}
+
+function updateCounter() {
+  const n = $("#output").value.length, lim = CONFIG.rule.charLimit, over = n > lim;
+  const c = $("#counter");
+  c.className = "counter" + (over ? " over" : "");
+  c.textContent = `${n.toLocaleString()} / ${lim.toLocaleString()} characters` +
+    (over ? ". Too long for the comment box: download the .txt, attach it to the form, and type \"See attached comment.\" in the box." : "");
+}
+function update() {
+  save();
+  if (!manualEdit) $("#output").value = buildComment();
+  updateCounter();
+  postHeight();
+}
+
+/* ---------- Actions ---------- */
+function wireActions() {
+  const out = $("#output");
+  out.addEventListener("input", () => { manualEdit = true; $("#edited").style.display = "block"; updateCounter(); });
+  $("#resync").addEventListener("click", () => { manualEdit = false; $("#edited").style.display = "none"; update(); });
+  $("#copy").addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(out.value); toast("Copied to clipboard"); }
+    catch (e) { out.select(); try { document.execCommand("copy"); toast("Copied"); } catch (_) { toast("Select the text and copy it manually"); } }
+  });
+  $("#download").addEventListener("click", () => {
+    const blob = new Blob([out.value], { type: "text/plain;charset=utf-8" });
+    const a = el("a", { href: URL.createObjectURL(blob), download: `comment-${CONFIG.rule.docketNumber}.txt` });
+    document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  });
+  $("#reset").addEventListener("click", () => {
+    if (!confirm("Erase everything you've written and start over?")) return;
+    try { localStorage.removeItem(CONFIG.storageKey); } catch (e) {}
+    location.reload();
+  });
+}
+
+/* ---------- Auto-resize when embedded in an iframe (see README) ---------- */
+function postHeight() {
+  if (window.parent === window) return;
+  requestAnimationFrame(() => {
+    try { window.parent.postMessage({ type: "comment-tool:height", height: document.documentElement.scrollHeight }, "*"); } catch (e) {}
+  });
+}
+window.addEventListener("resize", postHeight);
+
+buildHeader();
+buildAbout();
+buildTopics();
+wireActions();
+update();
+</script>
+</body>
+</html>
